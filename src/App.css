@@ -1,6 +1,74 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+/* Navbar css */
+
+.nav-ul{
+  background-color: #023e8a;
+  margin: 0px;
+  padding: 5px;
 }
+
+.nav-ul li{
+  display: inline-block;
+  padding: 10px;
+}
+
+
+.nav-ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+/*** Navbar css ***/
+
+
+/* Sign up and Login css */
+
+.register{
+  margin-left: 30%;
+}
+
+.login{
+  margin-left: 30%;
+}
+
+
+
+.inputBox {
+  padding: 7px;
+  display: block;
+  border: 1px solid skyblue;
+  width: 300px;
+  margin: 20px;
+}
+
+.appButton {
+  margin: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: skyblue;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+/*** Sign Up css ***/
+
+
+/* Footer css */
+
+.footer{
+    color: white;
+    background: #0466c8;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/*** Footer css ***/
+
 
 .App-logo {
   height: 40vmin;

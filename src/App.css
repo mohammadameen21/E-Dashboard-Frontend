@@ -21,16 +21,24 @@
   text-decoration: none;
 }
 
+.nav-left{
+  text-align: right;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+
+
 /*** Navbar css ***/
 
 
-/* Sign up and Login css */
+/* Sign up, Login and Add Product */
 
-.register{
-  margin-left: 30%;
-}
-
-.login{
+.register, .login, .product{
   margin-left: 30%;
 }
 

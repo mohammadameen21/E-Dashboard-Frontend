@@ -17,24 +17,33 @@ const Nav= () => {
     
     return(
         <div>
+
+            <img src="https://i.pinimg.com/736x/de/a0/f3/dea0f3b7f480b1151c08db4a402a43b9.jpg" alt="logo" className='logo'/>
+
         
+           { 
+            
+
+            auth ?
+
            <ul className="nav-ul">
+
             <li><Link to="/">Products</Link></li>
             <li><Link to="/add">Add Products</Link></li>
             <li><Link to="/update">Update Products</Link></li>
             <li><Link to="/profile">Profile</Link></li>
-            {/* if user loged in, show log out button and don't show signup */}
-            {/* <li>{ auth ? <Link onClick={logout} to="/signup" >Logout</Link> : <Link to="/signup">Sign Up</Link>}</li>
-            <li><Link to="/login">Login</Link></li> */}
+            <li><Link onClick={logout} to="/signup" >Logout({JSON.parse(auth).name})</Link></li>:
 
-            {
-                auth ? <li><Link onClick={logout} to="/signup" >Logout</Link></li>:<>
-                <li><Link to="/signup">Sign Up</Link>}</li>
+            </ul>
+
+            :
+            
+            <ul className="nav-ul nav-left">
                 <li><Link to="/login">Login</Link></li>
-                </>
+                <li><Link to="/signup">Sign Up</Link></li>
+            </ul>
+                
             }
-
-           </ul>
 
         </div>
     )

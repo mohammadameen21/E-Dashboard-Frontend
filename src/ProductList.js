@@ -27,19 +27,20 @@ const ProductList = () => {
                 <li>Category</li>
             </ul>
 
-            <ul>
-                <li>S. No.</li>
-                <li>Name</li>
-                <li>Price</li>
-                <li>Category</li>
-            </ul>
-            
-            <ul>
-                <li>S. No.</li>
-                <li>Name</li>
-                <li>Price</li>
-                <li>Category</li>
-            </ul>
+            {
+                products.map(()=>
+                
+                <ul>
+                    <li>S.No.</li>
+                    <li>Name</li>
+                    <li>Price</li>
+                    <li>Category</li>
+                </ul>
+                
+                )
+
+            }
+
         </div>
     )
 
